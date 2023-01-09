@@ -1,0 +1,1771 @@
+@font-face {
+    font-family: 'Magra';
+    src: url("assets/fonts/Magra Bold 600.ttf");
+    font-weight: 600;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+* {
+    margin:0; padding:0
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+} 
+
+
+
+.container-header {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    height: 90px;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    width: 100%;
+}
+
+header {
+    background-image: url('./assets/Mountains.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.header-logo  {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 216px;
+    height: 31px;
+    margin-top: 25px; 
+}
+
+.header-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-title {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    width: 180px;
+    height: 31px;
+}
+
+.nav-media390 {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 35px;
+}
+
+
+.nav-list {
+    list-style: none;
+}
+    
+    
+.nav-item {
+    cursor: pointer; 
+    margin-right: 42px;
+}
+
+.nav-item:last-child {
+    margin-right: 17px;
+}
+
+.nav-link {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    transition:  .3s;
+    color: #FFFFFF;
+    } 
+    
+.nav-link:hover {
+    color:#0D606F;
+    transition: .3s;
+    } 
+    
+html {
+    scroll-behavior: smooth; 
+    }
+
+.header-button {
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    width: 103px;
+    height: 41px;
+    margin-top: 25px;
+
+}
+
+.header-button,
+ button {
+    cursor: pointer; 
+}
+
+.header-button button {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #0D606F;
+    border: none;
+}
+
+/* start header-burger for adaptive */
+
+.header-burger {
+    display: none;
+    width: 35px;
+    height: 32px;
+    position: relative;
+}
+
+.burger-line {
+    display: block;
+    width: 75%;
+    height: 2.67px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 4.38px;
+}
+
+.burger-line-first {
+    top: 8px;
+}
+
+.burger-line-second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-line-third {
+    bottom: 8px;
+}
+
+/* end header-burger for adaptive */
+
+.preview {
+    background-image: url('./assets/Mountains.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 765px;
+    padding-top: 32px;
+
+}
+
+.container-preview {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    max-width: 815px;
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+
+}
+
+.text {
+    max-width: 723px;
+    font-family: 'Aleo', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+    height: 24px;
+    margin-bottom: 46px;
+}
+
+.preview-input {
+    display: flex;
+    max-width: 892px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 36px;
+    padding-right: 19px;
+
+}
+
+.preview-input input{
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    height: 25px;
+    width: 560px;
+    padding: 5px;
+}
+
+.preview-input input::placeholder {
+    font-family: 'Aleo', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+}
+
+.button {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.button {
+    cursor: pointer;
+}
+
+/* STEPS*/
+
+.container-steps {
+    max-width: 1177px;
+    margin: 0 auto;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 247px;
+    margin-top: -9px;
+}
+
+.section-title h2 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+
+}
+
+.steps-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+.icon-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    background: #F2785C;
+    border-radius: 16px;
+
+}
+
+.icon-img img {
+    color: #FFFFFF;
+
+}
+
+.icon2 {
+    padding-left: 70px;
+}
+
+.icon1-text,
+.icon2-text,
+.icon3-text {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+/*DESTINATIONS*/
+
+.japan.slide.four {
+    display: none;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  
+    min-height: 1042px;
+    margin-top: 97px;
+
+}
+
+.destinations  h2 {
+    margin-bottom: 46px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.destinations-slider {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 24px;
+    width: 100%;
+    position: relative;
+    transition: all ease 1s;
+}
+
+.spain, 
+.japan,
+.usa {
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+.slider-photo {
+    object-fit: cover;
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+}
+
+.destination {
+    position: absolute;
+    left: 15px;
+    top: 718px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.nav-bullets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: -5px;
+}
+
+.bullet {
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+}
+
+.bullet.active {
+    background: #F2785C;
+}
+
+.but {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.but-picture {
+    width: 40px;
+    height: 40px;
+    order: 0;
+}
+
+.but-picture-symbol {
+    width: auto;
+    height: auto;
+    padding-top: 9.5px;
+}
+
+
+.destinations-submit-title {
+    order: 1;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.side-right-left {
+    display: block;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    width: 15%;
+}
+ 
+.arrow.left {
+    left: 0;
+    right: auto;
+}
+
+.arrow.right {
+    left: auto;
+    right: 0;
+}
+
+
+/* STORIES*/
+
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px; 
+}
+
+.container-stories {
+    max-width: 1241px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container-stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-top: 41px;
+    margin-bottom: 40px;
+}
+
+.stories-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(./assets/boat.jpg);
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    width: 100%;
+    margin-top: 39px;
+    min-height: 1270px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.stories-post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  
+}
+
+.stories-photo-block {
+    height: 250px;
+    width: 400px;
+}
+
+
+.stories-photo {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgb(13, 96, 111);
+    border-radius: 16px;
+    object-fit: cover;
+
+}
+
+.stories-block-text h3 {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin-bottom: 24px;
+
+}
+
+.stories-text {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    max-width: 760px;
+}
+
+.stories-text-link {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0D606F;
+}
+
+.stories-but {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 41px;
+}
+
+.stories-but,
+.but {
+    cursor: pointer; 
+}
+
+
+.stories-submit-title {
+    order: 1;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+/*FOOTER*/
+
+footer {
+    background-image: url('./assets/boat.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.footer {
+    max-width: 1237px;
+    margin: 0px auto;
+    padding: 0 20px;
+
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 61px;  
+} 
+
+.footer-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 7px; 
+}
+
+.footer-list {
+    list-style: none;
+    }
+    
+.footer-item {
+    cursor: pointer; 
+    padding-right: 20px;
+}
+
+.footer-item:last-child {
+    padding-right: 0px;
+}
+
+.footer-item img {
+    height: 33.65px;
+    width: 33.65px;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-right: 328px;
+
+} 
+
+/* pop-up */
+
+.hidden {
+    transform: translateY(-200%);
+    transition: all 5s linear;
+}
+
+
+
+.pop-up {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.dark-mode {
+    background-color:rgba(20, 20, 20, 0.3);
+    transition: all 1.5s linear;
+    z-index: 10000000;
+}
+
+.pop-up_login {
+    display: fixed;
+    width: 650px;
+
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 25px 45px 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000000;
+    transition: all 1s linear;
+    margin: auto 10px;
+}
+
+h4 {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #0D606F;
+    margin-bottom: 30px;
+}
+
+.sign1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    width: 100%;
+    height: 56px;
+    background: #1877F2;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 20px;
+}
+
+.sign1-text {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.sign2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.sign2-text {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+}
+
+
+.span-or {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.span-text {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+    padding: 0 9px;
+}
+
+.line {
+    border: 1px solid rgba(13, 96, 111, 0.5);
+    width: 100%;
+    height: 0;
+}
+
+.login-input {
+    width: 100%;
+}
+
+.title-email,
+.title-password {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+    
+}
+
+.email-form input,
+.password-form input {
+    width: 100%;
+    height: 54px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+}
+
+.password-form input {
+    margin-bottom: 25px;
+}
+
+.email-form input {
+    margin-bottom: 20px;
+}
+
+.email-form input::placeholder,
+.password-form input::placeholder {
+    padding-left: 10px;
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color:black;
+}
+
+
+.sign3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    width: 100%;
+    height: 54px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.password-text-link {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+
+.line2 {
+    width: 100%;
+    height: 0;
+    border: 1px solid rgba(13, 96, 111, 0.5);
+    transform: rotate(0.1deg);
+    margin-bottom: 20px;
+    margin-top: 26px;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3px;
+}
+
+.register p{
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.register-text-link {
+    font-family: 'Aleo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+
+}
+
+.off {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* Media start */
+
+@media screen and (max-width: 1024px) {
+    .container-steps {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    h1 {
+        max-width: 750px;
+        font-size: 72px;
+        line-height: 80px
+    }
+
+    .preview {
+        height: 740px;
+        background-size: cover;
+
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stories-block-text h3 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .stories-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .stories-text-link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footer-text {
+        padding-right: 250px;
+    }
+
+    .destinations-slider {
+        gap: 40px;
+    }
+
+    .spain, .japan, .usa {
+        width: 700px;
+        height: 700px;
+    }
+
+    .slider-photo {
+        width: 700px;
+        height: 700px;
+    }
+
+    .destinations {
+        min-height: 0;
+    }
+    
+    .icon2 {
+        padding-left: 40px;
+    }
+    
+    .steps-icons {
+        margin-top: 40px;
+        min-height: 0;
+    }
+    
+}
+
+@media screen and (max-width: 915px) {
+    .nav-item {
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+   
+    .header {
+        height: 110px;
+    }
+    
+    .preview {
+        background-position: center -110px;
+        background-size: cover;
+    }
+
+    .nav-item {
+        transform: rotate(-30deg);
+        margin-right: 2px;
+    }
+    .steps-icons {
+        align-items: flex-start;
+    }
+
+    .icon1 {
+        align-items:flex-start;
+        padding-left: 20px;
+    }
+
+    .icon2 {
+        padding-left: 0px;
+    
+    }
+
+    .icon3 {
+        align-items: flex-end;
+        padding-right: 20px;
+    }
+
+    .icon3-text {
+        text-align: right;
+        max-width: 180px;
+    }
+
+    .icon1-text {
+        text-align: left;
+        max-width: 180px;
+    }
+
+    .spain, .japan, .usa {
+        width: 600px;
+        height: 600px;
+    }
+
+    .slider-photo {
+        width: 600px;
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    
+    .header {
+        height: 120px;
+    }
+
+    .preview {
+        background-position: center -120px;
+        background-size: cover;
+    }
+
+    .header-button {
+        margin-top: 10px;
+    }
+    .nav-item {
+        transform: rotate(-30deg);
+        margin-right: 0px;
+    }
+    
+    h1 {
+        max-width: 650px;
+        font-size: 64px;
+        line-height: 70px
+
+    }
+
+    .icon1-text, .icon2-text, .icon3-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .destinations {
+        margin-top: 50px;
+    }
+    .section-title h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .stories-block-text h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    
+    .stories-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .stories-text-link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .stories {
+        margin-top: 50px;
+    }
+    .footer-text {
+        padding-right: 150px;
+    }
+
+    .spain, .japan, .usa {
+        width: 500px;
+        height: 500px;
+    }
+
+    .slider-photo {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .icon1 {
+        align-items:flex-start;
+        padding-left: 15px;
+    }
+
+     .icon3 {
+        align-items: flex-end;
+        padding-right: 15px;
+    }
+
+    .icon3-text {
+        text-align: right;
+        max-width: 150px;
+    }
+
+    .icon1-text {
+        text-align: left;
+        max-width: 150px;
+    }
+
+    .stories-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .stories-text-link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+     .nav-item {
+        transform: none;
+        margin-right: 10px;
+    }
+
+ 
+}
+
+@media screen and (max-width: 600px) {
+    .spain, .japan, .usa {
+        width: 400px;
+        height: 400px;
+    }
+
+    .slider-photo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .footer-text {
+        padding-right: 50px;
+    }
+    .icon2-text {
+        text-align: center;
+        max-width: 150px;
+    }
+
+    h1 {
+        max-width: 500px;
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .preview {
+        padding-top: 60px;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .stories-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .stories-text-link {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .stories-block-text h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .header-title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 391px) {
+    
+    .container-header {
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 43px 16px 0;
+        align-items: center;
+    }
+    
+    .header-burger {
+        display: block;
+    }
+
+    header {
+        background-image: url(./assets/Mountains-mini.jpg);
+    }
+
+    .header {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .header::before {
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 251px;
+    }
+    
+    .header {
+        height: 75px;
+    }
+
+    .header-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 30px;
+        margin-top: 0px; 
+    }
+
+    .header-logo p {
+        display: none;
+    }
+
+    .container-nav {
+        display: none;
+    }
+
+    .nav-media390 {
+        display: block;
+        position: fixed;
+        width: 165px;
+        height: 250px;
+        top: 0;
+        right: 0;
+        background-color: #F2785C;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px;
+        z-index: 101;
+        padding-left: 44px;
+        padding-top: 44px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        transform: translateX(100%);
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .nav-open {
+        transform: translateX(0%);
+        transition: .5s all linear;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .nav-close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 11;
+    }
+
+    .nav-close-line {
+        display: block;
+        height: 1px;
+        width: 15px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 50%;
+        
+    }
+
+    .nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .preview {
+        background-image: url(./assets/Mountains-mini.jpg);
+        background-position: center -75px;
+        height: 100%;
+        padding-top: 0px;
+        background-size: cover;
+    
+    }
+
+    h1 {
+        display: none;
+    }
+    
+    .preview-text .text {
+        display: none;
+    }
+
+    .container-preview {
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 67px 15px 61px;
+    }
+
+    .preview-input {
+        width: 100%;
+        height: 48px;
+        padding-left: 16.55px;
+        padding-right: 9px;
+        }
+
+    .preview-input input::placeholder {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .preview-input input {
+        width: 226px;
+    }
+
+    .button {
+        width: 92px;
+        height: 30px;
+        gap: 10px;
+     
+    }
+    
+    .button {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    
+    .container-steps {
+        max-width: 1241px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .icon-img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 19px;
+    }
+
+    .icon-left {
+        width: 35px;
+        height: 31.5px;
+    }
+
+    .icon-center {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-right {
+        width: 40px;
+        height: 30px;
+    }
+
+    .icon1-text,
+    .icon2-text,
+    .icon3-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .steps-icons {
+        margin-top: 21px;
+        align-items: flex-start;
+    }
+
+    .steps {
+        padding-top: 20px;
+        min-height: 153px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .icon1 {
+        align-items: flex-start;
+    }
+
+    .icon1-text {
+        text-align: left;
+        max-width: 94px;
+    }
+    .icon2 {
+        padding-left: 0;
+    }
+
+    .icon3 {
+        align-items: flex-end;
+    }
+
+    .icon3-text {
+        text-align: right;
+        max-width: 98px;
+    }
+    .container-destination {
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .destinations h2 {
+        margin-bottom: 0px;
+    }
+    .destinations {
+        margin-top: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+    .destinations-slider {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .spain, 
+    .japan,
+    .usa {
+        width: 360px;
+        height: 210px;
+    }
+
+    .slider-photo {
+        width: 360px;
+        height: 210px;
+    }
+    .one {
+        order: 3;
+    }
+
+    .two {
+        order: 2;
+    }
+
+    .four {
+        order: 1;
+    }
+    
+    .three {
+        order: 4;
+    }
+
+    .five {
+        order: 5;
+    }
+  
+    .arrow {
+        opacity: 1;
+    }
+    
+    .arrow.left img {
+        position: absolute;
+        top: 110px;
+        left: 5px;
+    }
+
+    .arrow.right img {
+        position: absolute;
+        top: 110px;
+        right: 5px;   
+    }
+
+    .destination {
+        font-size: 20px;
+        line-height: 26px;
+        left: 15px;
+        top: 8px;
+    }
+    
+    .spain.slide.seven {
+        display: none;
+    }
+
+    .japan.slide.four {
+        display: block;
+    }
+
+    
+    .nav-bullets {
+        gap: 6px;
+        margin-bottom: 22px;
+        margin-top: -20px;
+        z-index: 100;
+    }
+    
+    .bullet {
+        width: 8px;
+        height: 8px;
+        background: rgba(242, 120, 92, 0.5);
+        border-radius: 50%;
+    }
+
+    .but {
+        width: 92px;
+        height: 30px;
+        gap: 6px;
+        padding: 7.5px 12px;
+
+    }
+
+    .but-picture {
+        width: 10px;
+        height: 10px;
+        position: relative;
+    }
+    
+    .but-picture-symbol {
+        position: absolute;
+        top: 25%;
+        padding-top: 0px;
+    }
+
+    .destinations-submit-title {
+        font-size: 11px;
+        line-height: 15px;
+        color: #FFFFFF;
+    }
+
+
+    .stories {
+        margin-top: 20px;
+    }
+    .section-title h2 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .container-stories {
+        max-width: 390px;
+        margin: 10px auto;
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .stories-bg {
+        margin-top: 10px;
+        min-height: 628px;
+        background-image: url(./assets/boat-mini.jpg);
+    }
+    
+    .stories-post {
+        gap: 10px;
+    }
+
+    .stories-photo-block {
+        height: 130px;
+        width: 155px;
+    }
+
+    .stories-block-text h3 {
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .stories-text {
+        font-size: 9px;
+        line-height: 11px;
+        max-width: 195px;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        margin: 0;
+        -webkit-line-clamp: 8; 
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      
+    }
+
+    .stories-text-link {
+        font-size: 9px;
+        line-height: 11px;
+        margin: 0;
+    }
+
+    .stories-link {
+        margin-top: -5px;
+    }
+
+    .stories-but {
+        padding: 7.5px 13.5px;
+        gap: 6px;
+        width: 92px;
+        height: 30px;
+        margin-bottom: 13px;
+    }
+
+    .stories-submit-title {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .footer {
+        height: 65px;
+    }
+
+    .footer {
+        max-width: 390px;
+        margin: 0px auto;
+        padding: 0 15px;
+        justify-content: center;
+
+    }
+
+    .footer-text {
+        display: none;
+    }
+
+    .footer-list {
+        margin-left: 9px;
+    }
+
+    footer {
+        background-image: url(./assets/boat-mini.jpg);
+    }
+
+    .blackout {
+     
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 10;
+    }
+
+}  
+
+
+
+
+
+
+/* Media end */
